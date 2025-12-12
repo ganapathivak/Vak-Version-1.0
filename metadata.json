@@ -1,0 +1,7 @@
+{
+  "name": "Vak AI",
+  "description": "A multimodal Socratic Coding Mentor and Practice Hub powered by Gemini Live API.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

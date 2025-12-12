@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vak AI Practice Hub</title>
+    
+    <!-- PrismJS Theme & Core -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              slate: {
+                850: '#151f32',
+                900: '#0f172a',
+                950: '#020617',
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; 
+      }
+      body {
+        background-color: #020617;
+        color: #e2e8f0;
+      }
+      /* Markdown Styles */
+      .prose h1 { font-size: 1.5rem; font-weight: 700; color: #e2e8f0; margin-bottom: 0.5rem; }
+      .prose h2 { font-size: 1.25rem; font-weight: 600; color: #cbd5e1; margin-top: 1rem; margin-bottom: 0.5rem; }
+      .prose h3 { font-size: 1.1rem; font-weight: 600; color: #94a3b8; margin-top: 0.75rem; }
+      .prose p { margin-bottom: 0.75rem; line-height: 1.6; color: #cbd5e1; }
+      .prose ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+      .prose code { background: #1e293b; padding: 0.2rem 0.4rem; rounded: 0.25rem; font-family: monospace; color: #e2e8f0; }
+      .prose pre { background: #1e293b; padding: 1rem; rounded: 0.5rem; overflow-x: auto; margin-bottom: 1rem; }
+      .prose strong { color: #fff; font-weight: 600; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "mermaid": "https://aistudiocdn.com/mermaid@^11.12.2",
+    "marked": "https://aistudiocdn.com/marked@^15.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
